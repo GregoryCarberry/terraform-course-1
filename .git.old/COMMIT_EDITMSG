@@ -1,0 +1,135 @@
+commit 1 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   datasource-demo/datasource.tf
+#	new file:   demo-10-ebs/.terraform.lock.hcl
+#	renamed:    demo-10/cloudinit.tf -> demo-10-ebs/cloudinit.tf
+#	renamed:    demo-10/instance.tf -> demo-10-ebs/instance.tf
+#	renamed:    demo-10/key.tf -> demo-10-ebs/key.tf
+#	renamed:    demo-10/provider.tf -> demo-10-ebs/provider.tf
+#	renamed:    demo-10/scripts/init.cfg -> demo-10-ebs/scripts/init.cfg
+#	renamed:    demo-10/scripts/volumes.sh -> demo-10-ebs/scripts/volumes.sh
+#	renamed:    demo-10/securitygroup.tf -> demo-10-ebs/securitygroup.tf
+#	renamed:    demo-10/vars.tf -> demo-10-ebs/vars.tf
+#	renamed:    demo-10/versions.tf -> demo-10-ebs/versions.tf
+#	renamed:    demo-10/vpc.tf -> demo-10-ebs/vpc.tf
+#	new file:   demo-11-route53/.terraform.lock.hcl
+#	renamed:    demo-11/provider.tf -> demo-11-route53/provider.tf
+#	renamed:    demo-11/route53.tf -> demo-11-route53/route53.tf
+#	renamed:    demo-11/vars.tf -> demo-11-route53/vars.tf
+#	renamed:    demo-11/versions.tf -> demo-11-route53/versions.tf
+#	new file:   demo-12-rds/.terraform.lock.hcl
+#	renamed:    demo-12/instance.tf -> demo-12-rds/instance.tf
+#	renamed:    demo-12/key.tf -> demo-12-rds/key.tf
+#	renamed:    demo-12/output.tf -> demo-12-rds/output.tf
+#	renamed:    demo-12/provider.tf -> demo-12-rds/provider.tf
+#	renamed:    demo-12/rds.tf -> demo-12-rds/rds.tf
+#	renamed:    demo-12/securitygroup.tf -> demo-12-rds/securitygroup.tf
+#	renamed:    demo-12/vars.tf -> demo-12-rds/vars.tf
+#	renamed:    demo-12/versions.tf -> demo-12-rds/versions.tf
+#	renamed:    demo-12/vpc.tf -> demo-12-rds/vpc.tf
+#	new file:   demo-13-iam/.terraform.lock.hcl
+#	renamed:    demo-13/iam.tf -> demo-13-iam/iam.tf
+#	renamed:    demo-13/provider.tf -> demo-13-iam/provider.tf
+#	renamed:    demo-13/vars.tf -> demo-13-iam/vars.tf
+#	renamed:    demo-13/versions.tf -> demo-13-iam/versions.tf
+#	new file:   demo-14-iam-roles/.terraform.lock.hcl
+#	renamed:    demo-14/iam.tf -> demo-14-iam-roles/iam.tf
+#	renamed:    demo-14/instance.tf -> demo-14-iam-roles/instance.tf
+#	renamed:    demo-14/key.tf -> demo-14-iam-roles/key.tf
+#	renamed:    demo-14/output.tf -> demo-14-iam-roles/output.tf
+#	renamed:    demo-14/provider.tf -> demo-14-iam-roles/provider.tf
+#	new file:   demo-14-iam-roles/s3.tf
+#	renamed:    demo-14/securitygroup.tf -> demo-14-iam-roles/securitygroup.tf
+#	renamed:    demo-14/vars.tf -> demo-14-iam-roles/vars.tf
+#	renamed:    demo-14/versions.tf -> demo-14-iam-roles/versions.tf
+#	renamed:    demo-14/vpc.tf -> demo-14-iam-roles/vpc.tf
+#	deleted:    demo-14/s3.tf
+#	new file:   demo-15-autoscaling/.terraform.lock.hcl
+#	new file:   demo-15-autoscaling/autoscaling.tf
+#	renamed:    demo-15/autoscalingpolicy.tf -> demo-15-autoscaling/autoscalingpolicy.tf
+#	renamed:    demo-15/key.tf -> demo-15-autoscaling/key.tf
+#	renamed:    demo-15/provider.tf -> demo-15-autoscaling/provider.tf
+#	renamed:    demo-15/securitygroup.tf -> demo-15-autoscaling/securitygroup.tf
+#	renamed:    demo-15/sns.tf -> demo-15-autoscaling/sns.tf
+#	renamed:    demo-15/vars.tf -> demo-15-autoscaling/vars.tf
+#	renamed:    demo-15/versions.tf -> demo-15-autoscaling/versions.tf
+#	renamed:    demo-15/vpc.tf -> demo-15-autoscaling/vpc.tf
+#	deleted:    demo-15/autoscaling.tf
+#	new file:   demo-16-elb/.terraform.lock.hcl
+#	new file:   demo-16-elb/autoscaling.tf
+#	renamed:    demo-16/elb.tf -> demo-16-elb/elb.tf
+#	renamed:    demo-16/key.tf -> demo-16-elb/key.tf
+#	renamed:    demo-16/output.tf -> demo-16-elb/output.tf
+#	renamed:    demo-16/provider.tf -> demo-16-elb/provider.tf
+#	renamed:    demo-16/securitygroup.tf -> demo-16-elb/securitygroup.tf
+#	renamed:    demo-16/vars.tf -> demo-16-elb/vars.tf
+#	renamed:    demo-16/versions.tf -> demo-16-elb/versions.tf
+#	renamed:    demo-16/vpc.tf -> demo-16-elb/vpc.tf
+#	deleted:    demo-16/autoscaling.tf
+#	new file:   demo-17-elastic-beanstalk/.terraform.lock.hcl
+#	renamed:    demo-17/elasticbeanstalk.tf -> demo-17-elastic-beanstalk/elasticbeanstalk.tf
+#	renamed:    demo-17/iam.tf -> demo-17-elastic-beanstalk/iam.tf
+#	renamed:    demo-17/key.tf -> demo-17-elastic-beanstalk/key.tf
+#	renamed:    demo-17/output.tf -> demo-17-elastic-beanstalk/output.tf
+#	renamed:    demo-17/provider.tf -> demo-17-elastic-beanstalk/provider.tf
+#	renamed:    demo-17/rds.tf -> demo-17-elastic-beanstalk/rds.tf
+#	renamed:    demo-17/securitygroup.tf -> demo-17-elastic-beanstalk/securitygroup.tf
+#	renamed:    demo-17/vars.tf -> demo-17-elastic-beanstalk/vars.tf
+#	renamed:    demo-17/versions.tf -> demo-17-elastic-beanstalk/versions.tf
+#	renamed:    demo-17/vpc.tf -> demo-17-elastic-beanstalk/vpc.tf
+#	new file:   demo-18-interpolation-and-conditionals/.terraform.lock.hcl
+#	renamed:    demo-18/instance.tf -> demo-18-interpolation-and-conditionals/instance.tf
+#	renamed:    demo-18/key.tf -> demo-18-interpolation-and-conditionals/key.tf
+#	renamed:    demo-18/provider.tf -> demo-18-interpolation-and-conditionals/provider.tf
+#	renamed:    demo-18/securitygroup.tf -> demo-18-interpolation-and-conditionals/securitygroup.tf
+#	renamed:    demo-18/vars.tf -> demo-18-interpolation-and-conditionals/vars.tf
+#	renamed:    demo-18/versions.tf -> demo-18-interpolation-and-conditionals/versions.tf
+#	renamed:    demo-18/vpc.tf -> demo-18-interpolation-and-conditionals/vpc.tf
+#	renamed:    demo-18b/dev/dev.tf -> demo-18b-project-structure/dev/dev.tf
+#	renamed:    demo-18b/dev/provider.tf -> demo-18b-project-structure/dev/provider.tf
+#	renamed:    demo-18b/dev/vars.tf -> demo-18b-project-structure/dev/vars.tf
+#	renamed:    demo-18b/dev/versions.tf -> demo-18b-project-structure/dev/versions.tf
+#	renamed:    demo-18b/modules/instances/instance.tf -> demo-18b-project-structure/modules/instances/instance.tf
+#	renamed:    demo-18b/modules/instances/versions.tf -> demo-18b-project-structure/modules/instances/versions.tf
+#	renamed:    demo-18b/modules/vpc/versions.tf -> demo-18b-project-structure/modules/vpc/versions.tf
+#	renamed:    demo-18b/modules/vpc/vpc.tf -> demo-18b-project-structure/modules/vpc/vpc.tf
+#	renamed:    demo-18b/prod/prod.tf -> demo-18b-project-structure/prod/prod.tf
+#	renamed:    demo-18b/prod/provider.tf -> demo-18b-project-structure/prod/provider.tf
+#	renamed:    demo-18b/prod/vars.tf -> demo-18b-project-structure/prod/vars.tf
+#	renamed:    demo-18b/prod/versions.tf -> demo-18b-project-structure/prod/versions.tf
+#	new file:   demo-7/.terraform.lock.hcl
+#	new file:   demo-8/.terraform.lock.hcl
+#	new file:   demo-9/.terraform.lock.hcl
+#	new file:   docker-demo-1/.terraform.lock.hcl
+#	new file:   docker-demo-2/.terraform.lock.hcl
+#	new file:   docker-demo-3/.terraform.lock.hcl
+#	new file:   docker-demo-3/backend.tf
+#	modified:   docker-demo-3/ecs.tf
+#	modified:   docker-demo-3/jenkins.tf
+#	modified:   docker-demo-3/s3.tf
+#	modified:   docker-demo-3/scripts/jenkins-init.sh
+#	modified:   docker-demo-3/vars.tf
+#	new file:   first-steps/.terraform.lock.hcl
+#	new file:   first-steps/datasource.tf
+#	modified:   first-steps/instance.tf
+#	new file:   first-steps/output.tf
+#	new file:   first-steps/templates/web.tpl
+#	new file:   first-steps/terraform.tf
+#	new file:   first-steps/variables.tf
+#	new file:   first-steps/vpc.tf
+#	new file:   jenkins-packer-demo/.terraform.lock.hcl
+#	modified:   jenkins-packer-demo/backend.tf
+#	modified:   jenkins-packer-demo/instance.tf
+#	modified:   jenkins-packer-demo/scripts/jenkins-init.sh
+#	modified:   jenkins-packer-demo/vars.tf
+#	new file:   packer-demo/.terraform.lock.hcl
+#	new file:   packer-demo/amivar.tf
+#	new file:   packer-demo/build-and-launch2.sh
+#	new file:   packer-demo/log
+#
